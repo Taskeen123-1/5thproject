@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>South Indian Food Shop</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Excel Coaching Center</title>
   <style>
-    /* Reset & Base */
+    /* Reset and Base Styles */
     * {
       margin: 0;
       padding: 0;
@@ -13,95 +13,107 @@
     }
 
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #fff8e1, #ffe0b2);
-      color: #333;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
     }
 
     /* Header Section */
     header {
-      background: linear-gradient(to right, #ff9800, #ff5722);
+      background-color: #004080;
       color: white;
+      padding: 20px 0;
       text-align: center;
-      padding: 30px 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
-    header h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
+    /* Navigation Menu */
+    nav {
+      background-color: #0066cc;
+      padding: 10px 0;
+      text-align: center;
     }
 
-    header p {
-      font-size: 18px;
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     /* Section Styling */
-    .section {
+    section {
       padding: 40px 20px;
       text-align: center;
     }
 
-    .section h2 {
-      font-size: 30px;
-      color: #e65100;
-      margin-bottom: 20px;
+    /* Course Cards */
+    .courses {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
     }
 
-    /* Menu Grid */
-    .menu-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      padding: 10px;
-    }
-
-    .menu-card {
+    .course-card {
       background-color: white;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 15px;
+      width: 280px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
-    .menu-card:hover {
-      transform: scale(1.05);
+    /* Contact Form */
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
 
-    .menu-card img {
+    input, textarea {
       width: 100%;
-      height: 160px;
-      object-fit: cover;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #aaa;
+      border-radius: 5px;
     }
 
-    .menu-info {
-      padding: 15px;
+    button {
+      padding: 10px 20px;
+      background-color: #004080;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
 
-    .menu-info h3 {
-      font-size: 20px;
-      color: #bf360c;
-    }
-
-    .menu-info p {
-      font-size: 14px;
-      color: #555;
-      margin-top: 5px;
+    button:hover {
+      background-color: #003366;
     }
 
     /* Footer */
     footer {
-      background-color: #3e2723;
+      background-color: #004080;
       color: white;
       text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      margin-top: 40px;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .courses {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -109,77 +121,95 @@
 
   <!-- Header -->
   <header>
-    <h1>South Indian Food Shop 🍛</h1>
-    <p>Authentic Taste | Homemade Flavours | Pure Veg</p>
+    <h1>Excel Coaching Center</h1>
+    <p>Your Path to Academic Excellence</p>
   </header>
 
-  <!-- About Section -->
-  <section class="section">
-    <h2>About Us</h2>
-    <p>Welcome to our South Indian food shop where tradition meets taste! We serve crispy dosas, soft idlis, spicy chutneys and more with love and authenticity.</p>
+  <!-- Navigation Links -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Welcome to Excel Coaching</h2>
+    <p>We help students crack competitive exams like JEE, NEET, SSC, and more.</p>
   </section>
 
-  <!-- Menu Section -->
-  <section class="section">
-    <h2>Our Menu</h2>
-    <div class="menu-grid">
+  <!-- About Section -->
+  <section id="about" style="background-color: #e6f2ff;">
+    <h2>About Us</h2>
+    <p>Excel Coaching has been a trusted name for quality education since 2005. With experienced faculty and top-notch resources, we ensure students achieve their dreams.</p>
+  </section>
 
-      <!-- Food Items -->
-      <div class="menu-card">
-        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/08/dosa-recipe.jpg" alt="Dosa">
-        <div class="menu-info">
-          <h3>Dosa</h3>
-          <p>Golden crispy dosa served with coconut chutney and sambar.</p>
-        </div>
+  <!-- Courses Section -->
+  <section id="courses">
+    <h2>Our Courses</h2>
+    <div class="courses">
+      <div class="course-card">
+        <h3>IIT-JEE</h3>
+        <p>Comprehensive syllabus with mock tests and expert doubt clearing sessions.</p>
       </div>
-
-      <div class="menu-card">
-        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/05/idli-recipe.jpg" alt="Idli">
-        <div class="menu-info">
-          <h3>Idli</h3>
-          <p>Soft steamed rice cakes, served with hot sambar and chutneys.</p>
-        </div>
+      <div class="course-card">
+        <h3>NEET</h3>
+        <p>Structured learning for medical aspirants with real-time assessments.</p>
       </div>
-
-      <div class="menu-card">
-        <img src="https://www.cookwithmanali.com/wp-content/uploads/2017/01/Medu-Vada.jpg" alt="Vada">
-        <div class="menu-info">
-          <h3>Vada</h3>
-          <p>Fried lentil donuts - crunchy outside, soft inside.</p>
-        </div>
+      <div class="course-card">
+        <h3>SSC & Banking</h3>
+        <p>Quant, Reasoning, English & GK coaching for government job aspirants.</p>
       </div>
-
-      <div class="menu-card">
-        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/01/venn-pongal-recipe.jpg" alt="Pongal">
-        <div class="menu-info">
-          <h3>Pongal</h3>
-          <p>Rice & moong dal cooked with ghee, pepper, and cumin.</p>
-        </div>
-      </div>
-
-      <div class="menu-card">
-        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/uttapam-recipe.jpg" alt="Uttapam">
-        <div class="menu-info">
-          <h3>Uttapam</h3>
-          <p>Thick dosa topped with onions, tomatoes & chilies.</p>
-        </div>
-      </div>
-
-      <div class="menu-card">
-        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/05/upma-recipe.jpg" alt="Upma">
-        <div class="menu-info">
-          <h3>Upma</h3>
-          <p>Quick breakfast made with semolina and tempered spices.</p>
-        </div>
-      </div>
-
     </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" style="background-color: #e6f2ff;">
+    <h2>Contact Us</h2>
+    <form onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="response" style="color: green; font-weight: bold;"></p>
   </section>
 
   <!-- Footer -->
   <footer>
-    &copy; 2025 South Indian Food Shop. All Rights Reserved.
+    <p>&copy; 2025 Excel Coaching Center. All Rights Reserved.</p>
   </footer>
+
+  <!-- JavaScript for Form Validation -->
+  <script>
+    function validateForm() {
+      // Get form values
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const response = document.getElementById('response');
+
+      // Basic check
+      if (name === "" || email === "" || message === "") {
+        alert("Please fill in all fields.");
+        return false;
+      }
+
+      // Email format validation
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!email.match(emailPattern)) {
+        alert("Please enter a valid email address.");
+        return false;
+      }
+
+      // Show success message
+      response.textContent = "Thank you! Your message has been sent.";
+      // Optionally reset form
+      document.querySelector("form").reset();
+      return false; // Prevent actual form submission (for demo)
+    }
+  </script>
 
 </body>
 </html>
