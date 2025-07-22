@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>South Indian Food Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fff8e1, #ffe0b2);
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header Section */
+    header {
+      background: linear-gradient(to right, #ff9800, #ff5722);
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    /* Section Styling */
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 30px;
+      color: #e65100;
+      margin-bottom: 20px;
+    }
+
+    /* Menu Grid */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 10px;
+    }
+
+    .menu-card {
+      background-color: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .menu-card:hover {
+      transform: scale(1.05);
+    }
+
+    .menu-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .menu-info {
+      padding: 15px;
+    }
+
+    .menu-info h3 {
+      font-size: 20px;
+      color: #bf360c;
+    }
+
+    .menu-info p {
+      font-size: 14px;
+      color: #555;
+      margin-top: 5px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #3e2723;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>South Indian Food Shop 🍛</h1>
+    <p>Authentic Taste | Homemade Flavours | Pure Veg</p>
+  </header>
+
+  <!-- About Section -->
+  <section class="section">
+    <h2>About Us</h2>
+    <p>Welcome to our South Indian food shop where tradition meets taste! We serve crispy dosas, soft idlis, spicy chutneys and more with love and authenticity.</p>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="section">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+
+      <!-- Food Items -->
+      <div class="menu-card">
+        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/08/dosa-recipe.jpg" alt="Dosa">
+        <div class="menu-info">
+          <h3>Dosa</h3>
+          <p>Golden crispy dosa served with coconut chutney and sambar.</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/05/idli-recipe.jpg" alt="Idli">
+        <div class="menu-info">
+          <h3>Idli</h3>
+          <p>Soft steamed rice cakes, served with hot sambar and chutneys.</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="https://www.cookwithmanali.com/wp-content/uploads/2017/01/Medu-Vada.jpg" alt="Vada">
+        <div class="menu-info">
+          <h3>Vada</h3>
+          <p>Fried lentil donuts - crunchy outside, soft inside.</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/01/venn-pongal-recipe.jpg" alt="Pongal">
+        <div class="menu-info">
+          <h3>Pongal</h3>
+          <p>Rice & moong dal cooked with ghee, pepper, and cumin.</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/uttapam-recipe.jpg" alt="Uttapam">
+        <div class="menu-info">
+          <h3>Uttapam</h3>
+          <p>Thick dosa topped with onions, tomatoes & chilies.</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/05/upma-recipe.jpg" alt="Upma">
+        <div class="menu-info">
+          <h3>Upma</h3>
+          <p>Quick breakfast made with semolina and tempered spices.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 South Indian Food Shop. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
